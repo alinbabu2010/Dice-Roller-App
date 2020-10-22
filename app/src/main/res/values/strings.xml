@@ -2,4 +2,5 @@
     <string name="app_name">Dice Roller</string>
     <string name="rollBtn_text">Roll</string>
     <string name="dice_heading">Roll two dice at a time!</string>
+    <string name="dice_image_description">Dice Image</string>
 </resources>

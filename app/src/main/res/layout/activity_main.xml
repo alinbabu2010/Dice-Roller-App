@@ -18,21 +18,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/digitText"
-        android:layout_width="134dp"
-        android:layout_height="64dp"
-        android:layout_marginBottom="168dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="48sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="288dp"
         android:layout_height="34dp"
@@ -46,4 +31,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="155dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="92dp"
+        android:contentDescription="@string/dice_image_description"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dice_1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,7 @@ package com.example.diceroller
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
@@ -29,16 +29,20 @@ class MainActivity : AppCompatActivity() {
      */
     private fun diceRoll() {
         // Create new Dice object with 6 sides and roll it
-        val rollDice1 = Dice(6)
-        val digit1 = rollDice1.roll()
+        val rollDice = Dice(6)
+        val digit1 = rollDice.roll()
 
-        val rollDice2 = Dice(6)
-        val digit2 = rollDice2.roll()
+        // Update the screen with the correct dice image roll
+        val diceImage: ImageView = findViewById(R.id.imageView)
+        when (digit1){
+            1 -> diceImage.setImageResource(R.drawable.dice_1)
+            2 -> diceImage.setImageResource(R.drawable.dice_2)
+            3 -> diceImage.setImageResource(R.drawable.dice_3)
+            4 -> diceImage.setImageResource(R.drawable.dice_4)
+            5 -> diceImage.setImageResource(R.drawable.dice_5)
+            6 -> diceImage.setImageResource(R.drawable.dice_6)
+        }
 
-        // Update the screen with the dice roll
-        val digitRolled: TextView = findViewById(R.id.digitText)
-        val digitText = "$digit1\t\t\t$digit2"
-        digitRolled.text =  digitText
     }
 }
 
